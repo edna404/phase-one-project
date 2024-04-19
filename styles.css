@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap");
+body {
+  
+  font-family: 'Barlow', sans-serif;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.TM-button, .headerButton {
+  font-family: 'Barlow';
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 175px;
+  height: 58px;
+  padding: 11px 13.5px 11px 14.5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 327px;
+  text-align: center;
+  margin: 23px auto 64px auto;
+}
+.logo {
+  align-self: center;
+}
+.headerButton {
+  background-color: #E8EFF2;
+  color: #162542;
+  margin-left: 136px;
+}
+.headerButton:hover {
+  background-color: #162542;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) and (max-width: 1210px) {
+  .header {
+    justify-content: space-between;
+    max-width: 689px;
+    margin: 40px auto 62px auto;
+  }
+  .headerButton {
+    width: 175px;
+    height: 58px;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .header {
+    max-width: 1110px;
+    justify-content: space-between;
+    margin: 75px auto 63px auto;
+  }
+  .headerButton {
+    width: 175px;
+    height: 58px;
+  }
+}
+
+.TM-div1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  max-width: 400px;
+}
+.TM-info {
+  margin: 0 24px 0 24px;
+}
+.TM-info h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48px;
+  color: #162542;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 32px 0;
+}
+.TM-para {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #7B8BAD;
+  margin: 0 0px 32px 0px;
+}
+.TM-footer {
+  display: flex;
+  min-width: 310px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 41px 64px 0px;
+}
+.TM-footer p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #7B8BAD;
+  text-transform: uppercase;
+  margin-left: 32px;
+}
+.TM-button {
+  background-color: #F16718;
+  color:#FFFFFF;
+}
+.TM-button:hover {
+  background-color: #FF9B62;
+}
+.division-image {
+  background-image: url(assets/mobile/image-keyboard.jpg);
+  width: 372px;
+  height: 331px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+  right: -21px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1210px) {
+  .TM-div1 {
+    flex-direction: row;
+    max-width: 768px;
+    margin-bottom: 40px;
+  }
+  .TM-info {
+    align-self: center;
+    max-width: 339px;
+    margin-right: 69px;
+    margin-left: 39px;
+  }
+  .TM-para {
+    margin: 34px 0 39px 0;
+  }
+  .TM-footer {
+    min-width: 339px;
+  }
+  .TM-button {
+    width: 175px;
+    height: 58px;
+  }
+  .division-image {
+    background-image: url(assets/tablet/image-keyboard.jpg);
+    width: 478px;
+    height: 425px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .TM-div1 {
+    flex-direction: row;
+    max-width: 1440px;
+  }
+  .TM-info {
+    max-width: 445px;
+    margin: 65px 115px 0 123px;
+  }
+  .TM-para {
+    margin: 24px 0 40px 0;
+  }
+  .TM-info h1 {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 900;
+  }
+  .TM-info p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  .TM-footer {
+    max-width: 445px;
+    justify-content: left;
+  }
+  .TM-button {
+    width: 175px;
+    height: 58px;
+  }
+  .division-image {
+    background-image: url(assets/desktop/image-keyboard.jpg);
+    width: 540px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 140px;
+  }
+  .division-image::after {
+    content: " ";
+    position: absolute;
+    background-image: url(assets/shared/pattern-square.svg);
+    width: 255px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 382px;
+    right: -300px;
+    z-index: -1;
+  }
+}
+
+.div2 {
+  max-width: 400px;
+  margin: 0 auto 0 auto;
+}
+.div2-info h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 60px 24px 60px;
+  color: #162542;
+}
+.div2-info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #7B8BAD;
+  text-align: center;
+  margin: 0 24px 111px 24px;
+}
+@media screen and (max-width: 767px) {
+  .div2-images {
+    display: flex;
+    margin-bottom: 75px;
+  }
+  .div2-image1 {
+    background-image: url(assets/mobile/image-phone-and-keyboard.jpg);
+    background-color: #F16718;
+    background-blend-mode: multiply;
+    width: 129px;
+    height: 193px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 24px;
+    margin-left: -22px;
+  }
+  .div2-image2 {
+    background-image: url(assets/mobile/image-glass-and-keyboard.jpg);
+    width: 220px;
+    height: 193px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1210px) {
+  .div2 {
+    max-width: 768px;
+    margin-bottom: 142px;
+  }
+  .div2-images {
+    display: flex;
+    margin-bottom: 72px;
+  }
+  .div2-image1 {
+    background-image: url(assets/tablet/image-phone-and-keyboard.jpg);
+    background-color: #F16718;
+    background-blend-mode: multiply;
+    width: 214px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 0 30px 0 39px;
+  }
+  .div2-image2 {
+    background-image: url(assets/tablet/image-glass-and-keyboard.jpg);
+    width: 445px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .div2-info {
+    display: flex;
+  }
+  .div2-info h2 {
+    text-align: left;
+    margin-left: 39px;
+    margin-bottom: 0;
+  }
+  .div2-info p {
+    text-align: left;
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .div2 {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+  .div2-images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 168px;
+  }
+  .div2-image1 {
+    background-image: url(assets/desktop/image-phone-and-keyboard.jpg);
+    background-color: #F16718;
+    background-blend-mode: multiply;
+    width: 255px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    margin: 0 30px 0 30px;
+  }
+  .div2-image1:before {
+    content: " ";
+    position: absolute;
+    background-image: url(assets/shared/pattern-square.svg);
+    width: 255px;
+    height: 236px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    margin-top: 244px;
+    margin-right: 30px;
+    left: -180px;
+    z-index: -1;
+  }
+  .div2-image2 {
+    background-image: url(assets/desktop/image-glass-and-keyboard.jpg);
+    width: 445px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .div2-info {
+    margin: 142px 0px 0 0px;
+  }
+  .div2-info h2 {
+    max-width: 255px;
+    text-align: left;
+    margin-left: 125px;
+  }
+  .div2-info p {
+    max-width: 255px;
+    text-align: left;
+    margin-left: 125px;
+  }
+}
+
+.features-section {
+  max-width: 400px;
+  margin: 0 auto 0 auto;
+}
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 24px;
+}
+.feature-box h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #162542;
+  margin: 48px 24px 24px 24px;
+}
+
+.feature-box p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #7B8BAD;
+  margin: 0 0 64px 0;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F16718;
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) and (max-width: 1210px) {
+  .features-section {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feature-box {
+    max-width: 281px;
+    margin: 0 69px 72px 0;
+    align-items: flex-start;
+  }
+  .feature-box h3 {
+    width: 255px;
+    text-align: left;
+    margin: 40px 0 24px 0;
+  }
+  .feature-box p {
+    width: 281px;
+    text-align: left;
+    margin: 0 0 24px 0;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .features-section {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+  .feature-box {
+    max-width: 255px;
+    margin: 0 30px 72px 0;
+    align-items: flex-start;
+  }
+  .feature-box h3 {
+    width: 215px;
+    text-align: left;
+    margin: 48px 0 24px 0;
+  }
+  .feature-box p {
+    width: 255px;
+    text-align: left;
+    margin: 0 0 24px 0;
+  }
+}
+
+.footer-section {
+  max-width: 272px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #7B8BAD;
+  text-align: center;
+  margin: 32px auto 39px auto;
+}
+
+.footer-section span {
+  font-weight: 700;
+}
